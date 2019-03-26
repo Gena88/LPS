@@ -1,4 +1,4 @@
-from telegram.ext import Updater, CommandHander
+from telegram.ext import Updater, CommandHandler
 import settings
 
 def start_bot(bot, update):
@@ -11,7 +11,7 @@ def start_bot(bot, update):
 def main():
 	upd = Updater(settings.TELEGA_API)
 	
-	upd.dispatcher.add_handler(CommandHander("start", start_bot)
+	upd.dispatcher.add_handler(CommandHandler("start", start_bot))
 
 	upd.start_polling()
 	upd.idle()
