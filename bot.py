@@ -9,7 +9,7 @@ def start_bot(bot, update):
 	print("start")
 
 def main():
-	upd = Updater(settings.TELEGA_API)
+	upd = Updater(845270052:AAEEhdj9Qz4Q4ndVwwngKtNsGcB_rEcYz0Q)
 	
 	upd.dispatcher.add_handler(CommandHandler("start", start_bot))
 
